@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>File Names</title>
+</head>
+<body>
+<h1>File Names</h1>
+<table>
+  <thead>
+  <tr>
+    <th>File Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- 这里使用 Thymeleaf 的循环语句遍历行数据 -->
+  <tr th:each="fileName : ${fileNames}">
+    <td th:text="${fileName}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

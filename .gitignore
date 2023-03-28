@@ -1,0 +1,30 @@
+# Maven build directory
+/target/
+
+# IntelliJ IDEA project files
+/.idea/
+
+# Gradle build directory
+/build/
+
+# Gradle wrapper files
+/gradle/
+/gradlew
+/gradlew.bat
+
+# Eclipse project files
+/.classpath
+/.project
+
+# Node.js dependencies
+/node_modules/
+
+# Spring Boot application configuration files
+#/src/main/resources/application.properties
+#/src/main/resources/application.yml
+
+# Log files
+/logs/
+
+# Mac OS X files
+.DS_Store
