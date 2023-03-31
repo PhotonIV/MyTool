@@ -1,6 +1,7 @@
 package com.photon.mytool.controller;
 
 import com.photon.mytool.utils.io.IOUtil;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,6 +18,7 @@ import java.util.List;
  */
 //@RestController
 @RequestMapping("/io")
+@Controller
 public class IoController {
 
     @PostMapping("/getFileName")
@@ -24,13 +26,13 @@ public class IoController {
 //        path = URLDecoder.decode(path, "UTF-8");
         List<String> fileNames = IOUtil.getFileNames(path);
         model.addAttribute("fileNames", fileNames);
-        return "fileName";
+        return "pages/fileName";
     }
 
     @GetMapping("/change")
     public String change(Model model) throws UnsupportedEncodingException {
 //        path = URLDecoder.decode(path, "UTF-8");
 //        model.addAttribute("fileNames", fileNames);
-        return "fileName";
+        return "pages/list";
     }
 }

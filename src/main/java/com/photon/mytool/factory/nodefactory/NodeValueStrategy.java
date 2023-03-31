@@ -8,5 +8,5 @@ import org.w3c.dom.Node;
  * @date 2023/03/28/ 11:51
  */
 public interface NodeValueStrategy {
-   String getNodeValue(Node node);
+    String getNodeValue(Node node);
 }
